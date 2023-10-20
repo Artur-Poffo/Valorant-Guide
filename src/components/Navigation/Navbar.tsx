@@ -10,10 +10,10 @@ export function Navbar() {
       <nav className="flex items-center gap-6">
         <ul className="flex items-center gap-4" >
           <li>
-            <NavLink className="text-brand-white-200 font-bold" name="Home" to="/" />
+            <NavLink className="text-brand-white-200 font-bold" name="Home" to="#home" />
           </li>
           <li>
-            <NavLink className="text-brand-white-200 font-bold" name="About" to="/about" />
+            <NavLink className="text-brand-white-200 font-bold" name="About" to="#about" />
           </li>
         </ul>
       </nav>
