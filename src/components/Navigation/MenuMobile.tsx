@@ -14,7 +14,7 @@ export function MenuMobile() {
         <div className="w-2/3 h-1 bg-brand-white-200" ></div>
       </div>
 
-      <div className={`fixed z-[998] top-0 left-0 w-full h-screen -ml-[${isMenuOpen ? '0' : '100vw'}] bg-brand-gray-700 flex flex-col items-center justify-center gap-10 transition-all`} >
+      <div className={`fixed z-[998] top-0 left-0 w-full h-screen ${isMenuOpen ? '' : '-ml-[100vw]'} bg-brand-gray-700 flex flex-col items-center justify-center gap-10 transition-all`} >
         <a href="/#home">
           <h1 className="text-3xl font-mono font-bold text-brand-red-500" >Valorant Guide</h1>
         </a>
