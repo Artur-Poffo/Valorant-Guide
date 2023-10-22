@@ -5,7 +5,7 @@ export function HomeSection() {
         <source src="/valorant-video.mp4" />
       </video>
 
-      <div className="z-10 flex flex-col items-center gap-2" >
+      <div className="z-10 flex flex-col items-center text-center gap-2" >
         <h1 className="text-7xl uppercase tracking-wider font-mono font-bold text-brand-red-500" >Valorant</h1>
         <span className="text-brand-white-200" >Uma jogo de tiro tático 5x5 com personagens originais</span>
       </div>

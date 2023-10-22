@@ -5,10 +5,10 @@ interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   to: string
 }
 
-export function NavLink({ name, to, className }: NavLinkProps) {
+export function NavLink({ name, to, className, ...rest }: NavLinkProps) {
   return (
     <>
-      <a className={`opacity-80 transition-opacity hover:opacity-100 ${className}`} href={to} >{name}</a>
+      <a {...rest} className={`opacity-80 transition-opacity hover:opacity-100 ${className}`} href={to} >{name}</a>
     </>
   )
 }
