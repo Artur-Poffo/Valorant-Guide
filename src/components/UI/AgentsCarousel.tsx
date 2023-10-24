@@ -1,4 +1,6 @@
-import { ReactNode } from "react";
+'use client'
+
+import { ReactNode, useEffect, useState } from "react";
 import { Carousel } from "react-configurable-carousel";
 
 interface AgentsCarouselProps {
@@ -7,15 +9,15 @@ interface AgentsCarouselProps {
 }
 
 export function AgentsCarousel({ children, slideInHover }: AgentsCarouselProps) {
-  let screenWidth = 1200
+  const [screenWidth, setScreenWidth] = useState(0)
   const breakpoints = {
     large: 1180,
     small: 600
   }
 
-  if (typeof window !== 'undefined') {
-    screenWidth = window.innerWidth
-  }
+  useEffect(() => {
+    setScreenWidth(window.innerWidth)
+  })
 
   return (
     <Carousel
