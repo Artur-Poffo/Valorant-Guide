@@ -12,7 +12,7 @@ export function AgentSummary({ name, uuid, description, imageUrl }: AgentSummary
   return (
     <div className="flex flex-col items-center text-center mx-auto gap-8" >
       <header>
-        <Image src={imageUrl} alt="Imagem do personagem em foco" width={400} height={400} className="w-[300px] h-[300px] md:w-full md:h-full" />
+        <Image src={imageUrl} alt="Imagem do personagem em foco" width={450} height={450} className="w-[300px] h-[300px] md:w-full md:h-full" />
       </header>
 
       <main className="flex flex-col items-center gap-1 max-w-xs sm:max-w-lg" >

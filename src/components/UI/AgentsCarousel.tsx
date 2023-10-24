@@ -1,27 +1,30 @@
 'use client'
 
-import { ReactChild } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { ReactNode } from "react";
+import { Carousel } from "react-configurable-carousel";
 
 interface AgentsCarouselProps {
-  children: ReactChild[]
+  children: ReactNode[],
+  slideInHover: boolean
 }
 
-export function AgentsCarousel({ children }: AgentsCarouselProps) {
+export function AgentsCarousel({ children, slideInHover }: AgentsCarouselProps) {
+  let screenWidth = window.innerWidth
+  const breakpoints = {
+    large: 1180,
+    small: 600
+  }
+
   return (
     <Carousel
-      centerMode
-      centerSlidePercentage={100}
-      autoPlay
-      infiniteLoop
-      stopOnHover
-      useKeyboardArrows
-      swipeable
-      showIndicators={false}
-      showStatus={false}
-      showThumbs={false}
-      interval={3000}
+      arrows={screenWidth > breakpoints.large ? true : false}
+      dotsNavigation={false}
+      autoScrollInterval={slideInHover ? 0 : 3000}
+      autoScrollClickDelay={slideInHover ? 0 : 3000}
+      outOfFocusDarken={screenWidth > breakpoints.large ? false : true}
+      width={"98%"}
+      height={"auto"}
+      carouselStyle={screenWidth > breakpoints.small ? '3d' : 'flat'}
     >
       {children}
     </Carousel>

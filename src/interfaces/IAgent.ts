@@ -4,7 +4,7 @@ export interface IAgent {
     uuid: string,
     displayName: string,
     description: string,
-    fullPortraitV2: string,
+    fullPortrait: string,
     backgroundGradientColors: string[],
     role: {
         uuid: string,
