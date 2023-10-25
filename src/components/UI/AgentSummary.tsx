@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HTMLAttributes } from "react";
 
-interface AgentSummaryProps {
+interface AgentSummaryProps extends HTMLAttributes<HTMLDivElement> {
   imageUrl: string,
   name: string,
   description: string
   uuid: string
 }
 
-export function AgentSummary({ name, uuid, description, imageUrl }: AgentSummaryProps) {
+export function AgentSummary({ name, uuid, description, imageUrl, ...rest }: AgentSummaryProps) {
   return (
-    <div className="flex flex-col items-center text-center mx-auto gap-8" >
+    <div className="flex flex-col items-center text-center mx-auto gap-8" {...rest} >
       <header>
         <Image src={imageUrl} alt="Imagem do personagem em foco" width={450} height={450} className="w-[300px] h-[300px] md:w-full md:h-full" />
       </header>
