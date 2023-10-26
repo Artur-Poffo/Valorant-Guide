@@ -5,7 +5,7 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'media.valorant-api.com',
-                pathname: '**'
+                pathname: '/**'
             }
         ]
     }

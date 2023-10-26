@@ -17,8 +17,8 @@ export function AgentSummary({ name, uuid, description, imageUrl, ...rest }: Age
       </header>
 
       <main className="flex flex-col items-center gap-1 max-w-xs sm:max-w-lg" >
-        <h1 className="text-3xl text-brand-white-100 font-mono font-bold" >{name}</h1>
-        <p className="text-brand-white-200 font-semibold" >{description}</p>
+        <h1 className="text-3xl text-brand-white-200 font-mono font-bold" >{name}</h1>
+        <p className="text-brand-white-300 font-semibold" >{description}</p>
       </main>
 
       <footer className="max-w-xs sm:max-w-sm sm:w-full" >
