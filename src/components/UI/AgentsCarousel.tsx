@@ -16,8 +16,9 @@ export function AgentsCarousel({ children, slideInHover }: AgentsCarouselProps) 
   }
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth)
-  })
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+  }, [])
 
   return (
     <Carousel
