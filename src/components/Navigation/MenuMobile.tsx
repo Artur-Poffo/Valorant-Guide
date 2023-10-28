@@ -15,7 +15,7 @@ export function MenuMobile() {
       </div>
 
       <div className={`fixed z-[998] top-0 left-0 w-full h-screen ${isMenuOpen ? '' : '-ml-[100vw]'} bg-brand-gray-700 flex flex-col items-center justify-center gap-10 transition-all`} >
-        <a href="/#home">
+        <a href="/#home" onClick={() => setIsMenuOpen(false)}>
           <h1 className="text-3xl font-mono font-bold text-brand-red-500" >Valorant Guide</h1>
         </a>
 
