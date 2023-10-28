@@ -18,6 +18,7 @@ export default async function Agent({ params: { id } }: AgentProps) {
             <article className="max-w-xl flex flex-col items-center gap-4" >
                 <header className="flex flex-col items-center text-center gap-1" >
                     <h1 className="text-4xl text-brand-red-500 uppercase tracking-widest font-mono font-bold" >{agent.displayName}</h1>
+                    <span className="text-sm font-bold text-brand-red-500" >{agent.role.displayName}</span>
                     <Image src={agent.fullPortrait} alt="Imagem do agente" width={600} height={600} />
                 </header>
 

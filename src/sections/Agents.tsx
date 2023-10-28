@@ -28,7 +28,7 @@ export function AgentsSection() {
             {
               agents.map(agent => {
                 return (
-                  <AgentSummary name={agent.displayName} description={agent.description} imageUrl={agent.fullPortrait} uuid={agent.uuid} key={agent.uuid} />
+                  <AgentSummary name={agent.displayName} roleName={agent.role.displayName} description={agent.description} imageUrl={agent.fullPortrait} uuid={agent.uuid} key={agent.uuid} />
                 )
               })
             }
