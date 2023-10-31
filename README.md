@@ -46,7 +46,7 @@ Valorant Guide - Is a project focused on agents in the game Valorant, in it you 
 <img src="https://github.com/Artur-Poffo/Valorant-Guide/blob/main/public/README/Agents.png?raw=true" alt="Print of Agents list section" />
 
 ### Agent Page Layout
-<img src="https://github.com/Artur-Poffo/Racism-Zero/blob/main/public/README/Agent.png?raw=true" alt="Print of Agent page layout" />
+<img src="https://github.com/Artur-Poffo/Valorant-Guide/blob/main/public/README/Agent.png?raw=true" alt="Print of Agent page layout" />
 
 
 ---
