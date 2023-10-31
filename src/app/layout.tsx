@@ -2,6 +2,7 @@ import { MenuMobile } from '@/components/Navigation/MenuMobile'
 import { Navbar } from '@/components/Navigation/Navbar'
 import type { Metadata } from 'next'
 import './globals.css'
+import { Footer } from '@/components/UI/Footer'
 
 export const metadata: Metadata = {
   title: 'Valorant Guide',
@@ -22,6 +23,8 @@ export default function RootLayout({
         <main className='min-h-screen' >
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   )
