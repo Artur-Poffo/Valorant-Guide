@@ -67,7 +67,7 @@ In addition, it is good to have an editor to work with the code like [VSCode](ht
 $ git clone https://github.com/Artur-Poffo/Valorant-Guide.git
 
 # Access the project folder cmd/terminal
-$ cd Racism-Zero
+$ cd Valorant-Guide
 
 # install the dependencies
 $ pnpm install
